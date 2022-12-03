@@ -11,5 +11,6 @@ router.get('/projects', controllerProjects.getProjects);
 router.get('/projects/:id', controllerProjects.getProject);
 router.put('/projects/:id', controllerProjects.updateProject);
 router.delete('/projects/:id', controllerProjects.deleteProject);
+router.post('/projects/:id/updates', controllerProjects.createUpdate);
 
 module.exports = router;

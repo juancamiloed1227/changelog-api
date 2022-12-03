@@ -4,9 +4,10 @@ moment.tz.setDefault('America/Bogota')
 class Update {
     static nextId = 1;
 
-    constructor(points) {
+    constructor(name, points) {
         this.id = Update.nextId++;
         this.date = this.getCurrentDate();
+        this.name = name;
         this.points = points;
     }
 

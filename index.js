@@ -16,5 +16,5 @@ app.use("/api", routes);
 
 // Start the server on port 3000
 app.listen(process.env.PORT || 8080, () => {
-    console.log("API server listening");
+    console.log("API server listening on Port :8080");
 });

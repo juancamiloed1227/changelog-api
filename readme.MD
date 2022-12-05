@@ -17,6 +17,7 @@ This endpoint receives a JSON object with the following fields:
 `name`: the name of the new user
 `email`: the email of the new user
 `password`: the password of the new user
+
 Request body example:
 
     {
@@ -31,6 +32,7 @@ This endpoint returns a JSON object with the newly created user, including their
 This endpoint receives a JSON object with the following fields:
 `email`: the email of the user trying to authenticate
 `password`: the password of the user trying to authenticate
+
 Request body example:
 
     {
@@ -42,6 +44,7 @@ This endpoint returns a JSON object with the authenticated user, including their
 
 ### Create project
     POST /api/projects
+    
 This endpoint receives a JSON object with the following fields:
 `name`: the name of the new project
 `updates (optional)`: an array of updates for the new project
@@ -153,6 +156,7 @@ This endpoint receives a `id` parameter in the URL path that specifies the ID of
 
 `name`: the updated name of the project (optional)
 `updates`: the updated array of updates for the project (optional)
+
 Request body example:
     
     {
@@ -174,6 +178,7 @@ This endpoint requires the user to be authenticated by providing a valid `token`
 Example query:
     
     PUT /api/projects/1
+    
 Response:    
 
     {
